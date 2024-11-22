@@ -13,99 +13,71 @@ button {
     font-size: 16px;
     cursor: pointer;
 }
-
 /* The navigation menu */
-.navbar{
-    overflow: hidden;
-    background-color: #96C9F4;
-}
-
-/* Navigation Links */
-.navbar a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* The subnavigation menu */
-.subnav {
-    float: left;
-    overflow: hidden;
-}
-
-/* Subnav button */
-.subnav .subnavbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-}
-/* Add a red background color to navigation links on hover */
-.navbar a:hover, .subnav:hover .subnavbtn {
-    background-color: red;
-  }
-/* Style the subnav content - positioned absolute */
-.subnav-content {
-    display: none;
-    position: absolute;
-    left: 0;
+.navbar {
     background-color: #0F67B1;
-    width: 100%;
-    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    position: relative;
 }
 
-/* Style the subnav links */
-.subnav-content a {
-    float: left;
+.navbar a {
     color: white;
     text-decoration: none;
+    padding: 14px 20px;
+    display: inline-block;
 }
-/* Add a grey background color on hover */
-.subnav-content a:hover {
-    background-color: #eee;
-    color: black;
-  }
-/* When you move the mouse over the subnav container, open the subnav content */
-.subnav:hover .subnav-content {
-    display: block;
-  }
 
-  /* The container <div> - needed to position the dropdown content */
+.navbar a:hover {
+    background-color: #333;
+    border-radius: 5px;
+}
+
+/* Dropdown container */
 .dropdown {
     position: relative;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
+}
+
+.dropdownbtn {
+    background-color: #0F67B1;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dropdownbtn:hover {
+    background-color: #333;
+    border-radius: 5px;
+}
+
+/* Dropdown content styles */
+.dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: #3FA2F6;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    top: 100%; /* Place dropdown below navbar */
+    left: 0;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
+}
+
+.dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
