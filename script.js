@@ -1,4 +1,4 @@
 // JavaScript functionality
-document.getElementById("clickMe").addEventListener("click", () => {
-    alert("Button clicked!");
-});
+// document.getElementById("clickMe").addEventListener("click", () => {
+//     alert("Button clicked!");
+// });

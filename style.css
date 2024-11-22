@@ -13,6 +13,20 @@ button {
     font-size: 16px;
     cursor: pointer;
 }
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile_id{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
 /* The navigation menu */
 .navbar {
     background-color: #0F67B1;
